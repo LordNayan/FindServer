@@ -20,6 +20,7 @@ app.use(function (req, res, next) {
 app.use('/', indexRouter);
 app.use('/server', serverRouter);
 
+//Start server on port
 app.listen(port, () => console.log(`Server started on port ${port}`));
 
 //Default error Handler
